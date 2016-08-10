@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # used to upload images
 gem 'carrierwave'
 gem 'fog' #Used for image hosting on Google Storage
+gem 'figaro' #used to secure configuration (git vs heroku)
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
