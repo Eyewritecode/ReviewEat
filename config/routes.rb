@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :reviews, excpet: [:show, :index]
+  
   devise_for :users
-  resources :restaurants
+  resources :restaurants do
+    resources :reviews, excpet: [:show, :index]
+  end
   get 'pages/about'
 
   get 'pages/contact'
