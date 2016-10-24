@@ -1,6 +1,6 @@
 class Restaurant < ActiveRecord::Base
 	mount_uploader :image, ImageUploader
-	searchkick
+	searchkick #run  rake searchkick:reindex CLASS=Restaurant after this
 	has_many :reviews
 	validates :name, :address, :phone, :website, :image, presence: true
 	validates :phone, format: {
