@@ -28,6 +28,7 @@ gem 'fog' #Used for image hosting on Google Storage
 gem 'figaro' #used to secure configuration (git vs heroku)
 gem 'mini_magick'
 gem 'devise'
+gem 'searchkick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
